@@ -1,21 +1,22 @@
 import React from 'react';
 import './TechCard.css';
 const TechCard = ({ tech, onAddToStack, isSelected }) => {
+  const badgeClass = tech.badge.toLowerCase().replace(/[^a-z]/g, '');
   return (
     <div className="tech-card">
       <div className="tech-card-header">
         <div className="tech-icon-wrapper">
           <img src={tech.icon} alt={tech.name} className="tech-icon" />
         </div>
-        <span className={`tech-badge badge-${tech.badge.toLowerCase().replace(/[^a-z]/g, '')}`}>
+        <span className={`tech-badge badge-${badgeClass}`}>
           {tech.badge}
         </span>
       </div>
       <h3 className="tech-name">{tech.name}</h3>
       <p className="tech-description">{tech.description}</p>
       <div className="tech-meta">
-        <span className="meta-chip chip-category">{tech.category}</span>
-        <span className="meta-chip chip-difficulty">{tech.difficulty}</span>
+        <span className="meta-category-chip">{tech.category}</span>
+        <span className="meta-difficulty-text">{tech.difficulty}</span>
         <span className="meta-rating">
           <span className="star-icon">★</span>
           <span>{tech.rating}</span>
