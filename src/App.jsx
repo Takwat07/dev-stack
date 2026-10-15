@@ -1,9 +1,11 @@
 import Navbar from './components/Navbar';
+import Hero from './components/Hero';
 function App() {
   return (
     <div className="app">
       <Navbar />
-      <main style={{ minHeight: '120vh', padding: '20px' }}>
+      <main>
+        <Hero />
       </main>
     </div>
   );
