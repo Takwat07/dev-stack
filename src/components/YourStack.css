@@ -1,0 +1,125 @@
+.your-stack-card{
+    background-color: #ffffff;
+    border: 1px solid #eef2f6;
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    position: sticky;
+    top: 90px; /* স্ক্রল করার সময় সাইডবার যেন সাথে আটকে থাকে */
+}
+.your-stack-header{
+    margin-bottom: 20px;
+}
+.your-stack-title{
+    font-size: 18px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 4px;
+}
+.your-stack-count{
+    font-size: 13px;
+    color: #64748b;
+}
+.stack-empty-box{
+    border: 1.5px dashed #e2e8f0;
+    border-radius: 10px;
+    padding: 32px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8fafc;
+}
+.stack-empty-text{
+    font-size: 13px;
+    color: #94a3b8;
+    font-weight: 500;
+}
+.stack-list-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.stack-items-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.stack-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 14px;
+    border: 1px solid #f1f5f9;
+    border-radius: 10px;
+    background-color: #ffffff;
+    transition: background-color 0.15s ease;
+}
+.stack-item:hover{
+    background-color: #f8fafc;
+}
+.stack-item-left{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.stack-item-icon-box{
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.stack-item-icon{
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+.stack-item-info{
+    display: flex;
+    flex-direction: column;
+}
+.stack-item-name{
+    font-size: 14px;
+    font-weight: 600;
+    color: #0f172a;
+    margin: 0;
+}
+.stack-item-category{
+    font-size: 11px;
+    color: #64748b;
+}
+.btn-remove-item{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #94a3b8;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: color 0.15s ease, background-color 0.15s ease;
+}
+.btn-remove-item:hover{
+    color: #ef4444;
+    background-color: #fee2e2;
+}
+.btn-remove-all{
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #fecaca;
+    color: #ef4444;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+.btn-remove-all:hover{
+    background-color: #fee2e2;
+    border-color: #f87171;
+}
