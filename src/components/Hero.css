@@ -1,0 +1,123 @@
+.hero-section{
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 20px 80px;
+    overflow: hidden;
+}
+.hero-container{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48px;
+}
+.hero-content{
+    flex: 1;
+    max-width: 620px;
+}
+.hero-title{
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1.15;
+    color: #111827;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+}
+.gradient-text{
+    background: linear-gradient(90deg, #f97316 0%, #ec4899 50%, #8b5cf6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+.hero-description{
+    font-size: 16px;
+    line-height: 1.6;
+    color: #64748b;
+    margin-bottom: 32px;
+    max-width: 520px;
+}
+.hero-buttons{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.btn-explore{
+    background: linear-gradient(90deg, #f97316, #ec4899);
+    color: #ffffff;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 12px 26px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(236, 72, 153, 0.35);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.btn-explore:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(236, 72, 153, 0.45);
+}
+.btn-learn-more{
+    background-color: #ffffff;
+    color: #4b5563;
+    border: 1px solid #e5e7eb;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 12px 26px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+.btn-learn-more:hover{
+    background-color: #f9fafb;
+    border-color: #d1d5db;
+    color: #111827;
+}
+.hero-image-wrapper{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-image{
+    max-width: 100%;
+    height: auto;
+    max-height: 420px;
+    object-fit: contain;
+}
+@media(max-width: 900px){
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+  .hero-content {
+    max-width: 100%;
+  }
+  .hero-title {
+    font-size: 38px;
+  }
+  .hero-description {
+    margin: 0 auto 28px;
+  }
+  .hero-buttons {
+    justify-content: center;
+  }
+  .hero-image {
+    max-height: 320px;
+  }
+}
+@media(max-width: 480px){
+  .hero-title {
+    font-size: 30px;
+  }
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  .btn-explore,
+  .btn-learn-more {
+    width: 100%;
+  }
+}
